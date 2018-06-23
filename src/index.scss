@@ -1,0 +1,27 @@
+// Bootstrapのスタイルを調整
+// https://getbootstrap.com/docs/4.0/getting-started/theming/#sass-options
+
+// 例えば角丸設定を上書きする
+$enable-rounded: false;
+// テーマカラー設定
+$theme-colors: (
+	"primary": #C51162
+);
+// ヒーロースペースの背景色
+$jumbotron-bg: #d9f5ff;
+// フォントを変える
+$font-family-base: serif;
+
+/* Bootstrap を読み込む */
+@import "~bootstrap/scss/bootstrap.scss";
+
+/* 自分のスタイルを書いていく */
+@import "base";
+@import "grid";
+
+body {
+	font-feature-settings: "palt";
+}
+/*img {
+	background-image: url("thumb.jpg");
+}*/
